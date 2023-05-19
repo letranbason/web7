@@ -1,0 +1,306 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background: #005FBE;
+}
+header .logo {
+  padding: 0 23px;
+}
+header .collapse .text {
+  color: white;
+}
+header .collapse .text .num1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+header .collapse .text .num2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+}
+header .collapse .text .num3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #1BDEF2;
+}
+header .contact .list {
+  color: white;
+  list-style: none;
+  gap: 10px;
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+header .contact .list a {
+  text-decoration: none;
+  color: white;
+}
+header .contact .list li:not(:last-child) {
+  margin-right: 20px;
+}
+header .contact .list li:last-child {
+  position: relative;
+}
+header .contact .list li:last-child::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -5px; /* Adjust the desired position of the line */
+  transform: translateY(-50%);
+  height: 80%;
+  width: 1px;
+  color: white;
+}
+header .contact form .form-control {
+  background: #4C85BD;
+  border-color: #4C85BD;
+}
+header .contact form .form-control::-moz-placeholder {
+  color: white;
+}
+header .contact form .form-control::placeholder {
+  color: white;
+}
+header .contact form .btn {
+  background: #00468B;
+}
+
+.menu {
+  background: #0063C6;
+  height: 40px;
+}
+.menu .list {
+  gap: 40px;
+  list-style: none;
+}
+.menu .list li {
+  position: relative;
+}
+.menu .list li a {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration: none;
+  color: white;
+}
+.menu .list li :not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 80%;
+  background-color: #000;
+}
+
+.introduce-site {
+  background: url("../images/homepagepic.png");
+  background-size: cover;
+  background-position: center top;
+  width: auto;
+  height: 80vh;
+  position: relative;
+}
+.introduce-site::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(15, 29, 44, 0.5) 15.94%, rgba(15, 29, 44, 0) 100%);
+  z-index: 1;
+}
+
+.content-site {
+  padding-bottom: 50px;
+}
+.content-site .title {
+  position: relative;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 33px;
+}
+.content-site .title::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: #1ADDF1;
+  bottom: -5px;
+  left: 0;
+}
+.content-site .news .flex-container .thumb {
+  margin-right: 20px;
+}
+.content-site .news .flex-container .thumb img {
+  width: 100px;
+  height: auto;
+}
+.content-site .news .flex-container .content {
+  flex-grow: 1;
+}
+.content-site .news .flex-container .content .title-news {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+.content-site .news .flex-container .content .title-news a {
+  color: #000;
+}
+.content-site .news .flex-container .content .description {
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.content-site .news .flex-container .content .description a {
+  color: #000;
+}
+.content-site .news .flex-container .date {
+  align-items: center;
+  margin-top: 1px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.content-site .news .flex-container .date img {
+  margin-right: 5px;
+  height: auto;
+}
+.content-site .news .flex-container .date p {
+  margin: 0;
+}
+.content-site .enrollment-site .slide .item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.content-site .enrollment-site .slide .item .img-fluid {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.content-site .enrollment-site .slide .item .info {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  background-color: white;
+  padding: 5px;
+  color: #000;
+}
+.content-site .enrollment-site .slide .item .info p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .content-site .enrollment-site .item {
+    flex: 1 0 100%;
+  }
+}
+.content-site .event-site .event {
+  position: relative;
+}
+.content-site .event-site .event img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.content-site .event-site .event .descrip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateX(25%);
+  padding: 10px;
+  color: #fff;
+}
+.content-site .event-site .event .descrip p {
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+}
+.content-site .information-site .option a {
+  text-decoration: none;
+}
+.content-site .information-site .option a .select {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 5px 20px;
+}
+.content-site .information-site .option a .select img {
+  margin-right: 25px;
+  height: auto;
+}
+.content-site .information-site .option a .select p {
+  color: #000;
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+footer {
+  background: #005FBE;
+}
+footer .collapse .text {
+  color: white;
+}
+footer .collapse .text .num1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+footer .collapse .text .num2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+}
+footer .collapse .text .num3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #1BDEF2;
+}/*# sourceMappingURL=main.css.map */
