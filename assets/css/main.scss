@@ -102,6 +102,15 @@ header{
                 height: 80%;
                 background-color: #000;
             }
+            &::after{
+                content: "";
+                position: absolute;
+                height: 20px;
+                width: 1px;
+                top: 0;
+                left: 0;
+                color: #000;
+            }
         }
     }
 }
@@ -302,6 +311,25 @@ footer{
                 line-height: 18px;  
                 color:#1BDEF2;
                 @extend .num3;
+            }
+        }
+    }
+    ul{
+        li{
+            color: $primary-color;
+        }
+    }
+    .title{
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .below{
+        background: #0057AE;
+        .copyright{
+            p{
+                color: $primary-color;
             }
         }
     }

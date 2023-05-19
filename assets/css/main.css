@@ -26,6 +26,18 @@
   font-style: normal;
   font-display: swap;
 }
+.var1 {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.var2 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -128,6 +140,15 @@ header .contact form .btn {
   width: 1px;
   height: 80%;
   background-color: #000;
+}
+.menu .list li::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 1px;
+  top: 0;
+  left: 0;
+  color: #000;
 }
 
 .introduce-site {
@@ -303,4 +324,19 @@ footer .collapse .text .num3 {
   font-size: 15px;
   line-height: 18px;
   color: #1BDEF2;
+}
+footer ul li {
+  color: white;
+}
+footer .title {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+footer .below {
+  background: #0057AE;
+}
+footer .below .copyright p {
+  color: white;
 }/*# sourceMappingURL=main.css.map */
