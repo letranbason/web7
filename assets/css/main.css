@@ -43,10 +43,11 @@ body {
 }
 
 header {
-  background: #005FBE;
+  background: url("../images/Maskheader.png");
+  background-color: #005FBE;
 }
 header .logo {
-  padding: 0 23px;
+  padding: 0 23px 0 0;
 }
 header .collapse .text {
   color: white;
@@ -114,14 +115,16 @@ header .contact form .btn {
 }
 
 .menu {
+  height: auto;
   background: #0063C6;
-  height: 40px;
 }
 .menu .list {
-  gap: 40px;
+  padding: 0;
   list-style: none;
 }
 .menu .list li {
+  margin-right: 20px;
+  margin-bottom: 10px;
   position: relative;
 }
 .menu .list li a {
@@ -183,8 +186,9 @@ header .contact form .btn {
   position: absolute;
   color: white;
   z-index: 2;
-  left: 60px;
-  top: 40px;
+  left: 0;
+  top: 30%;
+  width: 100%;
 }
 .introduce-site .register .btn {
   margin-top: 20px;
@@ -195,7 +199,8 @@ header .contact form .btn {
   position: absolute;
   z-index: 2;
   bottom: 5%;
-  left: 10%;
+  left: 0;
+  width: 100%;
 }
 .introduce-site .detail .about {
   color: #FF4444;
@@ -210,100 +215,135 @@ header .contact form .btn {
 .content-site {
   padding-bottom: 50px;
 }
-.content-site .title {
+.content-site .container {
+  background: white;
+}
+.content-site .container .div:not(:last-child) {
+  background: #F6F6F6;
+}
+.content-site .container .title {
   position: relative;
   font-weight: 800;
   font-size: 28px;
   line-height: 33px;
 }
-.content-site .title::after {
+.content-site .container .title::after {
   position: absolute;
   content: "";
   width: 100px;
-  height: 3px;
+  height: 5px;
   background-color: #1ADDF1;
   bottom: -5px;
   left: 0;
 }
-.content-site .news .flex-container .thumb {
-  margin-right: 20px;
-}
-.content-site .news .flex-container .thumb img {
+.content-site .container .middle::after {
+  position: absolute;
+  content: "";
   width: 100px;
-  height: auto;
+  height: 5px;
+  background-color: #1ADDF1;
+  bottom: -5px;
+  left: 0;
+  transform: translateX(140%);
 }
-.content-site .news .flex-container .content {
+.content-site .container .news .flex-container .thumb {
+  margin-right: 10px;
+}
+.content-site .container .news .flex-container .thumb img {
+  height: 40%;
+}
+.content-site .container .news .flex-container .content {
   flex-grow: 1;
 }
-.content-site .news .flex-container .content .title-news {
+.content-site .container .news .flex-container .content .title-news {
+  margin: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
 }
-.content-site .news .flex-container .content .title-news a {
+.content-site .container .news .flex-container .content .title-news a {
   color: #000;
 }
-.content-site .news .flex-container .content .description {
-  margin-top: 0;
+.content-site .container .news .flex-container .content .description {
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
 }
-.content-site .news .flex-container .content .description a {
+.content-site .container .news .flex-container .content .description a {
   color: #000;
 }
-.content-site .news .flex-container .date {
+.content-site .container .news .flex-container .date {
   align-items: center;
   margin-top: 1px;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
 }
-.content-site .news .flex-container .date img {
+.content-site .container .news .flex-container .date img {
   margin-right: 5px;
   height: auto;
 }
-.content-site .news .flex-container .date p {
+.content-site .container .news .flex-container .date p {
   margin: 0;
 }
-.content-site .enrollment-site .slide .item {
+.content-site .container .enrollment-site .slide .item {
+  transition: all 0.3s ease;
   position: relative;
   display: flex;
   flex-direction: column;
 }
-.content-site .enrollment-site .slide .item .img-fluid {
+.content-site .container .enrollment-site .slide .item .img-fluid {
   position: relative;
   width: 100%;
   height: auto;
 }
-.content-site .enrollment-site .slide .item .info {
+.content-site .container .enrollment-site .slide .item .info {
   position: absolute;
-  bottom: 2px;
-  right: 2px;
+  bottom: 0;
+  right: 0;
   background-color: white;
-  padding: 5px;
+  padding: 10px;
   color: #000;
 }
-.content-site .enrollment-site .slide .item .info p {
+.content-site .container .enrollment-site .slide .item .info p {
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   margin: 0;
 }
 @media (max-width: 768px) {
-  .content-site .enrollment-site .item {
+  .content-site .container .enrollment-site .item {
     flex: 1 0 100%;
   }
 }
-.content-site .event-site .event {
+.content-site .container .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-auto-flow: row;
+}
+.content-site .container .grid-container .grid-item {
+  overflow: hidden;
   position: relative;
 }
-.content-site .event-site .event img {
-  position: relative;
+.content-site .container .grid-container .grid-item img {
   width: 100%;
   height: auto;
+  display: block;
+  position: relative;
 }
-.content-site .event-site .event .descrip {
+.content-site .container .grid-container .grid-item img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(15, 29, 44, 0) 0%, rgba(15, 29, 44, 0.8) 76.04%);
+  z-index: 2;
+}
+.content-site .container .grid-container .grid-item .descrip {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -312,33 +352,70 @@ header .contact form .btn {
   padding: 10px;
   color: #fff;
 }
-.content-site .event-site .event .descrip p {
+.content-site .container .grid-container .grid-item .descrip p {
   margin: 0;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
 }
-.content-site .information-site .option a {
+@media (max-width: 768px) {
+  .content-site .container .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .content-site .container .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+.content-site .container .information-site .option {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  justify-content: center;
+}
+.content-site .container .information-site .option a {
+  transition: all 0.3s ease;
+  flex: 0 0 30.33%;
   text-decoration: none;
 }
-.content-site .information-site .option a .select {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  padding: 5px 20px;
+@media (max-width: 1100px) {
+  .content-site .container .information-site .option a {
+    flex: unset;
+  }
 }
-.content-site .information-site .option a .select img {
+.content-site .container .information-site .option a .select {
+  flex: 0 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 5px 0 5px 40px;
+}
+.content-site .container .information-site .option a .select img {
   margin-right: 25px;
   height: auto;
 }
-.content-site .information-site .option a .select p {
+.content-site .container .information-site .option a .select p {
   color: #000;
   margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
 }
+@media (max-width: 768px) {
+  .content-site .container .information-site .option {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .content-site .container .information-site .option {
+    grid-template-columns: 1fr;
+  }
+}
 
 footer {
-  background: #005FBE;
+  background: url("../images/Mask.png");
+  background-color: #005FBE;
+  position: relative;
 }
 footer .collapse .text {
   color: white;
@@ -373,9 +450,19 @@ footer .title {
 }
 footer .below {
   width: 100%;
-  height: 30px;
   background: #0057AE;
 }
 footer .below .copyright p {
+  margin: 0;
   color: white;
+}
+@media (max-width: 768px) {
+  footer {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  footer .row .col {
+    flex: unset;
+  }
 }/*# sourceMappingURL=main.css.map */

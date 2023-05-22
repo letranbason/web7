@@ -4,9 +4,10 @@ body{
     font-family: $font-family;
 }
 header{
-    background: #005FBE;
+    background: url('../images/Maskheader.png') ;
+    background-color: #005FBE;
     .logo{
-        padding:0 23px;
+        padding:0 23px 0 0;
     }
     .collapse{
         .text{
@@ -78,12 +79,14 @@ header{
     }
 }
 .menu{
+    height: auto;
     background: #0063C6;
-    height: 40px;
     .list{
-        gap: 40px;
+        padding: 0;
         list-style: none;
         li{
+            margin-right: 20px;
+            margin-bottom: 10px;
             position: relative;
             a{
                 font-weight: 700;
@@ -113,6 +116,7 @@ header{
             }
         }
     }
+
 }
 
 .introduce-site{
@@ -146,8 +150,9 @@ header{
         position: absolute;
         color: $primary-color;
         z-index: 2;
-        left: 60px;
-        top: 40px;
+        left: 0;
+        top: 30%;
+        width: 100%;
         .btn{
             margin-top: 20px;
             border-radius: 0px;
@@ -158,7 +163,8 @@ header{
         position: absolute;
         z-index: 2;
         bottom: 5%;
-        left: 10%;
+        left: 0;
+        width: 100%;
         .about{
             color:#FF4444;
             p{
@@ -174,7 +180,12 @@ header{
 
 .content-site{
     padding-bottom: 50px;
-    .title{
+    .container{
+        background: white;
+        .div:not(:last-child){
+            background: #F6F6F6;
+        }
+        .title{
         position: relative;
         font-weight: 800;
         font-size: 28px;
@@ -183,25 +194,37 @@ header{
             position: absolute;
             content: "";
             width: 100px;
-            height: 3px;
+            height: 5px;
             background-color: #1ADDF1;
             bottom: -5px;
             left: 0;
         }
     }
+    .middle{
+        &::after{
+            position: absolute;
+            content: "";
+            width: 100px;
+            height: 5px;
+            background-color: #1ADDF1;
+            bottom: -5px;
+            left: 0;
+            transform: translateX(140%);
+        }
+    }
     .news{
         .flex-container{
             .thumb {
-                margin-right: 20px;
+                margin-right: 10px;
                 img{
-                    width: 100px;
-                    height: auto; 
+                    height: 40%;
                 }
             }
 
             .content {
                 flex-grow: 1;
                 .title-news{
+                    margin: 0;
                     font-weight: 700;
                     font-size: 16px;
                     line-height: 22px;
@@ -210,7 +233,7 @@ header{
                     }
                 }
                 .description{
-                    margin-top: 0;
+                    margin: 0;
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 22px;
@@ -239,8 +262,10 @@ header{
     }
     .enrollment-site{
         .slide{
-            
             .item{
+                -webkit-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                transition: all 0.3s ease;
                 position: relative;
                 display: flex;
                 flex-direction: column;
@@ -248,13 +273,14 @@ header{
                     position: relative;
                     width: 100%;
                     height: auto;
+
                 }
                 .info{
                     position: absolute;
-                    bottom: 2px;
-                    right: 2px;
+                    bottom: 0;
+                    right: 0;
                     background-color: white;
-                    padding: 5px;
+                    padding: 10px;
                     color:$secondary-color;
                     p{
                         font-weight: 700;
@@ -272,13 +298,30 @@ header{
         }
     }
 
-    .event-site{
-        .event{
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 20px;
+        grid-auto-flow: row;
+        .grid-item{
+            overflow: hidden;
             position: relative;
             img{
-                position: relative;
                 width: 100%;
                 height: auto;
+                display: block;
+                position: relative;
+                // padding-right: 0.75rem;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 20%;
+                    bottom: 0;
+                    left: 0;
+                    background: linear-gradient(180deg, rgba(15, 29, 44, 0) 0%, rgba(15, 29, 44, 0.8) 76.04%);
+                    z-index: 2;
+                }
             }
             .descrip {
                 position: absolute;
@@ -296,15 +339,38 @@ header{
                 }
             }
         }
+        
+    }
+    @media (max-width: 768px) {
+        .grid-container {
+            grid-template-columns: repeat(2, 1fr); 
+        }
+    }
+    @media (max-width: 500px) {
+        .grid-container {
+            grid-template-columns: 1fr; 
+        }
     }
     .information-site{
         .option{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 20px;
+            justify-content: center;
             a{
+                -webkit-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+                 flex: 0 0 30.33%;
                 text-decoration: none;
+                @media (max-width: 1100px){
+                    flex: unset;
+                }
                 .select{
-                    
+                    flex: 0 0 auto; 
                     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-                    padding: 5px 20px;
+                    padding: 5px 0 5px 40px;
                     img{
                         margin-right: 25px;
                         height: auto;
@@ -318,12 +384,29 @@ header{
                     }
                 }
             }
+            }
+        }
+    @media (max-width: 768px) {
+        .information-site{
+            .option {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+    }
+    @media (max-width: 500px) {
+        .information-site{
+            .option {
+                grid-template-columns: 1fr; 
+            }
         }
     }
 }
+}
 
 footer{
-    background: #005FBE;
+    background: url('../images/Mask.png');
+    background-color: #005FBE;
+    position: relative;
     .collapse{
         .text{
             color: $primary-color;
@@ -364,11 +447,21 @@ footer{
     }
     .below{
         width: 100%;
-        height: 30px;
         background: #0057AE;
         .copyright{
             p{
+                margin: 0;
                 color: $primary-color;
+            }
+        }
+    }
+    @media (max-width: 768px){
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .row{
+            .col{
+                flex: unset;
             }
         }
     }
