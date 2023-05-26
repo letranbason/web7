@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
@@ -16,7 +17,7 @@
 </head>
 
 <body>
-    <header>
+    <header>    
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <figure class="d-flex justify-content-center mb-0">
@@ -62,10 +63,10 @@
                             </li>
                         </ul>
 
-                        <form class="d-flex" role="search">
+                        <form class="d-flex justify-content-end" role="search">
                             <input class="form-control" type="search" placeholder="Tìm kiếm ..." aria-label="Search">
                             <button class="btn" type="submit">
-                                <i class="fa-light fa-magnifying-glass" style="color: #f0f0f0;"></i>
+                                <i class="fas fa-search color-custom"></i>
                             </button>
                         </form>
                     </div>
@@ -81,7 +82,7 @@
 
                 <li>
                     <a href="#">
-                        <img src="assets/images/homepage.png" class="img-fluid" alt="">
+                        <img src="assets/images/homepage.svg" class="img-fluid" alt="">
                     </a>
                 </li>
                 <li>
@@ -128,59 +129,254 @@
         </div>
     </div>
     <div class="introduce-site">
+        <div class="background-slide">
+            <div><img src="./assets/images/homepagepic.png" class="background" alt=""></div>  
+            <div><img src="./assets/images/homepagepic.png" class="background" alt=""></div>
+            <div><img src="./assets/images/homepagepic.png" class="background" alt=""></div> 
+        </div>
         <div class="register">
             <div class="container">
                 <h1>
                     There are many <br> variations of passages
                 </h1>
-                <button class="btn btn-info">Đăng ký</button>
+                <button class="btn btn-info"><b>Đăng ký</b></button>
             </div>
         </div>
         <div class="parent-container d-flex justify-content-center align-items-center">
             <div class="container">
-                <div class="detail d-flex gap-4 justify-content-center flex-wrap ">
-                    <div class="thing d-flex align-items-center gap-3">
+                <div class="detail d-flex justify-content-center flex-wrap ">
+                    <div class="thing d-flex align-items-center gap-2">
                         <img src="assets/images/students.png" class="img-fluid" alt="">
                         <div class="about">
-                            98.5%
+                            <b>
+                                98.5%
+                            </b>
                             <p>Sinh viên có việc làm ngay</p>
                         </div>
                     </div>
-                    <div class="thing d-flex align-items-center gap-3">
+                    <div class="thing d-flex align-items-center gap-2">
                         <img src="assets/images/students.png" class="img-fluid" alt="">
                         <div class="about">
-                            98.5%
+                            <b>
+                                98.5%
+                            </b>
                             <p>Sinh viên có việc làm ngay</p>
                         </div>
                     </div>
-                    <div class="thing d-flex align-items-center gap-3">
+                    <div class="thing d-flex align-items-center gap-2">
                         <img src="assets/images/students.png" class="img-fluid" alt="">
                         <div class="about">
-                            98.5%
+                            <b>
+                                98.5%
+                            </b>
                             <p>Sinh viên có việc làm ngay</p>
                         </div>
                     </div>
-                    <div class="thing d-flex align-items-center gap-3">
+                    <div class="thing d-flex align-items-center gap-2">
                         <img src="assets/images/students.png" class="img-fluid" alt="">
                         <div class="about">
-                            98.5%
+                            <b>
+                                98.5%
+                            </b>
                             <p>Sinh viên có việc làm ngay</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 
-    <div class="content-site">
+    <section class="content-site">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
-                    <div class="title text-uppercase mt-5">
-                        <p><b>Thông báo</b></p>
+                <div class="col-lg-8">
+                    <div class="above-area d-flex justify-content-between align-items-center">
+                        <div class="title text-uppercase mt-5">
+                            <p><b>Thông báo</b></p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="click mt-5">
+                                <button id="prevBtn_top" class="custom-prev-top"><</button>
+                                <button id="nextBtn_top" class="custom-next-top">></button>
+                            </div>
+                        </div>
                     </div>
-                    <article class="news mt-5">
+                    <div class="sliderNews">
+                        <div class="ads-news">
+                            <div class="news mt-5">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="thumb">
+                                            <a href="#">
+                                                <img src="assets/images/contentt.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-8">
+                                        <div class="content d-flex flex-column">
+                                            <h3 class="title-news">
+                                                <a href="#" class="text-decoration-none">
+                                                    Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
+                                                </a>
+                                            </h3>
+                                            <p class="description">
+                                                    It is a long established fact that a reader will be distracted by the readable
+                                                    content
+                                                    of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                                                    has a
+                                                    ‘Content here, content here'
+                                            </p>
+                                            <div class="date d-flex">
+                                                <img src="assets/images/date.png" alt="">
+                                                <p>23/03/2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="news mt-5">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="thumb">
+                                            <a href="#">
+                                                <img src="assets/images/contentt.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-8">
+                                        <div class="content d-flex flex-column">
+                                            <h3 class="title-news">
+                                                <a href="#" class="text-decoration-none">
+                                                    Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
+                                                </a>
+                                            </h3>
+                                            <p class="description">
+                                                    It is a long established fact that a reader will be distracted by the readable
+                                                    content
+                                                    of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                                                    has a
+                                                    ‘Content here, content here'
+                                            </p>
+                                            <div class="date d-flex">
+                                                <img src="assets/images/date.png" alt="">
+                                                <p>23/03/2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="news mt-5">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="thumb">
+                                            <a href="#">
+                                                <img src="assets/images/contentt.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-8">
+                                        <div class="content d-flex flex-column">
+                                            <h3 class="title-news">
+                                                <a href="#" class="text-decoration-none">
+                                                    Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
+                                                </a>
+                                            </h3>
+                                            <p class="description">
+                                                    It is a long established fact that a reader will be distracted by the readable
+                                                    content
+                                                    of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                                                    has a
+                                                    ‘Content here, content here'
+                                            </p>
+                                            <div class="date d-flex">
+                                                <img src="assets/images/date.png" alt="">
+                                                <p>23/03/2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ads-news">
+                            <div class="news mt-5">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="thumb">
+                                            <a href="#">
+                                                <img src="assets/images/contentt.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-8">
+                                        <div class="content d-flex flex-column">
+                                            <h3 class="title-news">
+                                                <a href="#" class="text-decoration-none">
+                                                    Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
+                                                </a>
+                                            </h3>
+                                            <p class="description">
+                                                    It is a long established fact that a reader will be distracted by the readable
+                                                    content
+                                                    of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                                                    has a
+                                                    ‘Content here, content here'
+                                            </p>
+                                            <div class="date d-flex">
+                                                <img src="assets/images/date.png" alt="">
+                                                <p>23/03/2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="news mt-5">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="thumb">
+                                            <a href="#">
+                                                <img src="assets/images/contentt.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-8">
+                                        <div class="content d-flex flex-column">
+                                            <h3 class="title-news">
+                                                <a href="#" class="text-decoration-none">
+                                                    Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
+                                                </a>
+                                            </h3>
+                                            <p class="description">
+                                                    It is a long established fact that a reader will be distracted by the readable
+                                                    content
+                                                    of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                                                    has a
+                                                    ‘Content here, content here'
+                                            </p>
+                                            <div class="date d-flex">
+                                                <img src="assets/images/date.png" alt="">
+                                                <p>23/03/2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+            
+
+                
+                    <!-- <article class="news mt-5">
                         <div class="flex-container d-flex align-items-center mt-5">
                             <div class="thumb">
                                 <a href="#">
@@ -210,126 +406,244 @@
                         </div>
                     </article>
 
-                    <article class="news">
-                        <div class="flex-container d-flex align-items-center mt-5">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/images/contentt.png" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h3 class="title-news">
-                                    <a href="#" class="text-decoration-none">
-                                        Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
-                                    </a>
-                                </h3>
-                                <p class="description">
-                                    <a href="#" class="text-decoration-none">
-                                        It is a long established fact that a reader will be distracted by the readable
-                                        content
-                                        of a page when looking at its layout. The point of using Lorem Ipsum is that it
-                                        has a
-                                        ‘Content here, content here'
-                                    </a>
-                                </p>
-                                <div class="date d-flex">
-                                    <img src="assets/images/date.png" alt="">
-                                    <p>23/03/2023</p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                -->
 
-                    <article class="news">
-                        <div class="flex-container d-flex align-items-center mt-5 ">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/images/contentt.png" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h3 class="title-news">
-                                    <a href="#" class="text-decoration-none">
-                                        Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
-                                    </a>
-                                </h3>
-                                <p class="description">
-                                    <a href="#" class="text-decoration-none">
-                                        It is a long established fact that a reader will be distracted by the readable
-                                        content
-                                        of a page when looking at its layout. The point of using Lorem Ipsum is that it
-                                        has a
-                                        ‘Content here, content here'
-                                    </a>
-                                </p>
-                                <div class="date d-flex">
-                                    <img src="assets/images/date.png" alt="">
-                                    <p>23/03/2023</p>
+                    <!-- <div class="hidden-content">
+                        <div class="news mt-5">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="assets/images/contentt.png" alt="">
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </article>
 
-                    <article class="news">
-                        <div class="flex-container d-flex align-items-center mt-5 ">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/images/contentt.png" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h3 class="title-news">
-                                    <a href="#" class="text-decoration-none">
-                                        Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
-                                    </a>
-                                </h3>
-                                <p class="description">
-                                    <a href="#" class="text-decoration-none">
-                                        It is a long established fact that a reader will be distracted by the readable
-                                        content
-                                        of a page when looking at its layout. The point of using Lorem Ipsum is that it
-                                        has a
-                                        ‘Content here, content here'
-                                    </a>
-                                </p>
-                                <div class="date d-flex">
-                                    <img src="assets/images/date.png" alt="">
-                                    <p>23/03/2023</p>
+                                <div class="col-lg-8">
+                                    <div class="content d-flex flex-column">
+                                        <h3 class="title-news">
+                                            <a href="#" class="text-decoration-none">
+                                                Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
+                                            </a>
+                                        </h3>
+                                        <p class="description">
+                                                It is a long established fact that a reader will be distracted by the readable
+                                                content
+                                                of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                                                has a
+                                                ‘Content here, content here'
+                                        </p>
+                                        <div class="date d-flex">
+                                            <img src="assets/images/date.png" alt="">
+                                            <p>23/03/2023</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </article>
+
+                        <div class="news mt-5">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="assets/images/contentt.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-8">
+                                    <div class="content d-flex flex-column">
+                                        <h3 class="title-news">
+                                            <a href="#" class="text-decoration-none">
+                                                Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
+                                            </a>
+                                        </h3>
+                                        <p class="description">
+                                                It is a long established fact that a reader will be distracted by the readable
+                                                content
+                                                of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                                                has a
+                                                ‘Content here, content here'
+                                        </p>
+                                        <div class="date d-flex">
+                                            <img src="assets/images/date.png" alt="">
+                                            <p>23/03/2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+
                     <div class="d-flex justify-content-center align-items-end mt-5">
-                        <button class="btn btn-info">Xem thêm</button>
+                        <button class="btn btn-info show-more">Xem thêm</button>
                     </div>
                 </div>
 
-                <div class="news-event col-lg-5">
-                    <div class="title text-uppercase mt-5">
+                <div class="news-event col-lg-4">
+                    <div class="title text-uppercase mt-5 mb-5">
                         <p><b>Tin tức & sự kiện</b></p>
                     </div>
 
-                    <article class="news mt-5">
-                        <div class="flex-container d-flex align-items-center mt-3 ">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/images/contentt.png" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h3 class="title-news">
-                                    <a href="#" class="text-decoration-none">
-                                        Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
+                    <div class="small-news mt-3">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="thumb">
+                                    <a href="#">
+                                        <img src="assets/images/contentt.png" alt="">
                                     </a>
-                                </h3>
-                                <div class="date d-flex">
-                                    <img src="assets/images/date.png" alt="">
-                                    <p>23/03/2023</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8">
+                                <div class="content">
+                                    <h3 class="title-news">
+                                        <a href="#" class="text-decoration-none">
+                                            Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
+                                        </a>
+                                    </h3>
+                                    <div class="date d-flex">
+                                        <img src="assets/images/date.png" alt="">
+                                        <p>23/03/2023</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </article>
+                    </div>
 
+                    <div class="small-news mt-3">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="thumb">
+                                    <a href="#">
+                                        <img src="assets/images/contentt.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8">
+                                <div class="content">
+                                    <h3 class="title-news">
+                                        <a href="#" class="text-decoration-none">
+                                            Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
+                                        </a>
+                                    </h3>
+                                    <div class="date d-flex">
+                                        <img src="assets/images/date.png" alt="">
+                                        <p>23/03/2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="small-news mt-3">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="thumb">
+                                    <a href="#">
+                                        <img src="assets/images/contentt.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8">
+                                <div class="content">
+                                    <h3 class="title-news">
+                                        <a href="#" class="text-decoration-none">
+                                            Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
+                                        </a>
+                                    </h3>
+                                    <div class="date d-flex">
+                                        <img src="assets/images/date.png" alt="">
+                                        <p>23/03/2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="small-news mt-3">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="thumb">
+                                    <a href="#">
+                                        <img src="assets/images/contentt.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8">
+                                <div class="content">
+                                    <h3 class="title-news">
+                                        <a href="#" class="text-decoration-none">
+                                            Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
+                                        </a>
+                                    </h3>
+                                    <div class="date d-flex">
+                                        <img src="assets/images/date.png" alt="">
+                                        <p>23/03/2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="small-news mt-3">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="thumb">
+                                    <a href="#">
+                                        <img src="assets/images/contentt.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8">
+                                <div class="content">
+                                    <h3 class="title-news">
+                                        <a href="#" class="text-decoration-none">
+                                            Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
+                                        </a>
+                                    </h3>
+                                    <div class="date d-flex">
+                                        <img src="assets/images/date.png" alt="">
+                                        <p>23/03/2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="small-news mt-3">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="thumb">
+                                    <a href="#">
+                                        <img src="assets/images/contentt.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8">
+                                <div class="content">
+                                    <h3 class="title-news">
+                                        <a href="#" class="text-decoration-none">
+                                            Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
+                                        </a>
+                                    </h3>
+                                    <div class="date d-flex">
+                                        <img src="assets/images/date.png" alt="">
+                                        <p>23/03/2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 
                     <article class="news">
                         <div class="flex-container d-flex align-items-center mt-3 ">
                             <div class="thumb">
@@ -349,201 +663,94 @@
                                 </div>
                             </div>
                         </div>
-                    </article>
-
-                    <article class="news">
-                        <div class="flex-container d-flex align-items-center mt-3 ">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/images/contentt.png" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h3 class="title-news">
-                                    <a href="#" class="text-decoration-none">
-                                        Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
-                                    </a>
-                                </h3>
-                                <div class="date d-flex">
-                                    <img src="assets/images/date.png" alt="">
-                                    <p>23/03/2023</p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="news">
-                        <div class="flex-container d-flex align-items-center mt-3 ">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/images/contentt.png" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h3 class="title-news">
-                                    <a href="#" class="text-decoration-none">
-                                        Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
-                                    </a>
-                                </h3>
-                                <div class="date d-flex">
-                                    <img src="assets/images/date.png" alt="">
-                                    <p>23/03/2023</p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="news">
-                        <div class="flex-container d-flex align-items-center mt-3 ">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/images/contentt.png" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h3 class="title-news">
-                                    <a href="#" class="text-decoration-none">
-                                        Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
-                                    </a>
-                                </h3>
-                                <div class="date d-flex">
-                                    <img src="assets/images/date.png" alt="">
-                                    <p>23/03/2023</p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="news">
-                        <div class="flex-container d-flex align-items-center mt-3 ">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/images/contentt.png" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h3 class="title-news">
-                                    <a href="#" class="text-decoration-none">
-                                        Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
-                                    </a>
-                                </h3>
-                                <div class="date d-flex">
-                                    <img src="assets/images/date.png" alt="">
-                                    <p>23/03/2023</p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="news">
-                        <div class="flex-container d-flex align-items-center mt-3 ">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/images/contentt.png" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h3 class="title-news">
-                                    <a href="#" class="text-decoration-none">
-                                        Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
-                                    </a>
-                                </h3>
-                                <div class="date d-flex">
-                                    <img src="assets/images/date.png" alt="">
-                                    <p>23/03/2023</p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="news">
-                        <div class="flex-container d-flex align-items-center mt-3 ">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/images/contentt.png" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h3 class="title-news">
-                                    <a href="#" class="text-decoration-none">
-                                        Quyết định về việc công nhận kết quả rèn luyện sinh viên năm học 2021-2022
-                                    </a>
-                                </h3>
-                                <div class="date d-flex">
-                                    <img src="assets/images/date.png" alt="">
-                                    <p>23/03/2023</p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                    </article> -->
                     <div class="d-flex justify-content-center align-items-end mt-5">
                         <button class="btn btn-info">Xem thêm</button>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="enrollment-site">
-                <div class="top d-flex justify-content-between align-items-center">
-                    <div class="title text-uppercase mt-5">
-                        <p class="head"><b>Tuyển sinh</b></p>
+    <section class="enrollment-site">
+        <div class="container">
+            <div class="top d-flex justify-content-between align-items-center">
+                <div class="title text-uppercase mt-5">
+                    <p class="head"><b>Tuyển sinh</b></p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="click mt-5">
+                        <button id="prevBtn" class="custom-prev"><</button>
+                        <button id="nextBtn" class="custom-next">></button>
                     </div>
                     <button class="btn btn-info mt-5">Xem thêm</button>
                 </div>
-
-                <div class="slidertable">
-                    <div class="item">
-                        <a href="#">
-                            <img src="assets/images/tuyensinh.png" class="img-fluid" alt="">
-                            <div class="info">
-                                <p>
-                                    Khoá học ngắn hạn
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="item">
-                        <a href="#">
-                            <img src="assets/images/tuyensinh.png" class="img-fluid" alt="">
-                            <div class="info">
-                                <p>
-                                    Khoá học ngắn hạn
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="assets/images/tuyensinh.png" class="img-fluid" alt="">
-                            <div class="info">
-                                <p>
-                                    Khoá học ngắn hạn
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="assets/images/tuyensinh.png" class="img-fluid" alt="">
-                            <div class="info">
-                                <p>
-                                    Khoá học ngắn hạn
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <button id="prevBtn" class="custom-prev"><</button>
-                <button id="nextBtn" class="custom-next">></button>
             </div>
 
-            <div class="event-site">
-                <div class="top d-flex justify-content-between align-items-center">
-                    <div class="title text-uppercase mt-5">
-                        <p class="head"><b>Theo dòng sự kiện</b></p>
+            <div class="slidertable">
+                <div class="item">
+                    <a href="#">
+                        <img src="assets/images/tuyensinh.png" class="img-fluid" alt="">
+                        <div class="info">
+                            <p>
+                                Khoá học ngắn hạn
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="#">
+                        <img src="assets/images/tuyensinh.png" class="img-fluid" alt="">
+                        <div class="info">
+                            <p>
+                                Khoá học ngắn hạn
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="assets/images/tuyensinh.png" class="img-fluid" alt="">
+                        <div class="info">
+                            <p>
+                                Khoá học ngắn hạn
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img src="assets/images/tuyensinh.png" class="img-fluid" alt="">
+                        <div class="info">
+                            <p>
+                                Khoá học ngắn hạn
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="event-site">
+        <div class="container">
+            <div class="top d-flex justify-content-between align-items-center">
+                <div class="title text-uppercase mt-5">
+                    <p class="head"><b>Theo dòng sự kiện</b></p>
+                </div>
+                
+                <div class="d-flex align-items-center">
+                    <div class="click mt-5">
+                        <button id="prevBtn_event" class="custom-prev-event"><</button>
+                        <button id="nextBtn_event" class="custom-next-event">></button>
                     </div>
                     <button class="btn btn-info mt-5">Xem thêm</button>
                 </div>
+            </div>
+
+            <div class="slider-grid">
                 <div class="grid-container mt-5">
                     <div class="grid-item">
                         <a href="#">
@@ -611,78 +818,151 @@
                         </a>
                     </div>
                 </div>
-            </div>
 
-            <div class="information-site">
-                <div class="container d-flex justify-content-center align-items-center">
-                    <div class="title middle text-uppercase mt-5">
-                        <p><b>Thông tin theo danh mục</b></p>
+                        <div class="grid-container mt-5">
+                    <div class="grid-item">
+                        <a href="#">
+                            <img src="assets/images/event.png" class="img-fluid" alt="">
+                            <div class="descrip">
+                                <p>
+                                    Hoạt động thể thao
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item">
+                        <a href="#">
+                            <img src="assets/images/event.png" class="img-fluid" alt="">
+                            <div class="descrip">
+                                <p>
+                                    Hoạt động thể thao
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item">
+                        <a href="#">
+                            <img src="assets/images/event.png" class="img-fluid" alt="">
+                            <div class="descrip">
+                                <p>
+                                    Hoạt động thể thao
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item">
+                        <a href="#">
+                            <img src="assets/images/event.png" class="img-fluid" alt="">
+                            <div class="descrip">
+                                <p>
+                                    Hoạt động thể thao
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item">
+                        <a href="#">
+                            <img src="assets/images/event.png" class="img-fluid" alt="">
+                            <div class="descrip">
+                                <p>
+                                    Hoạt động thể thao
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="grid-item">
+                        <a href="#">
+                            <img src="assets/images/event.png" class="img-fluid" alt="">
+                            <div class="descrip">
+                                <p>
+                                    Hoạt động thể thao
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
+            </div>
 
-                <div class="option mt-5">
-                    <a href="">
-                        <div class="select d-flex">
-                            <img src="assets/images/option.png" class="img-fluid" alt="">
-                            <p>
-                                Cổng đào tạo
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="">
-                        <div class="select d-flex">
-                            <img src="assets/images/option.png" class="img-fluid" alt="">
-                            <p>
-                                Cổng đào tạo
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="">
-                        <div class="select d-flex">
-                            <img src="assets/images/option.png" class="img-fluid" alt="">
-                            <p>
-                                Cổng đào tạo
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="">
-                        <div class="select d-flex">
-                            <img src="assets/images/option.png" class="img-fluid" alt="">
-                            <p>
-                                Cổng đào tạo
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="">
-                        <div class="select d-flex">
-                            <img src="assets/images/option.png" class="img-fluid" alt="">
-                            <p>
-                                Cổng đào tạo
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="">
-                        <div class="select d-flex">
-                            <img src="assets/images/option.png" class="img-fluid" alt="">
-                            <p>
-                                Cổng đào tạo
-                            </p>
-                        </div>
-                    </a>
-                </div>
             </div>
         </div>
-    </div>
+    </section>
+    
+
+    <section class="information-site">
+        <div class="container">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="title middle text-uppercase mt-5">
+                <p><b>Thông tin theo danh mục</b></p>
+            </div>
+        </div>
+
+        <div class="option mt-5">
+            <a href="">
+                <div class="select d-flex text-uppercase">
+                    <img src="assets/images/option1.svg" class="img-fluid" alt="">
+                    <p>
+                        Cổng đào tạo
+                    </p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="select d-flex text-uppercase">
+                    <img src="assets/images/option2.svg" class="img-fluid" alt="">
+                    <p>
+                        Tra cứu kết quả tuyển sinh
+                    </p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="select d-flex text-uppercase">
+                    <img src="assets/images/option3.svg" class="img-fluid" alt="">
+                    <p>
+                        Thư viện số
+                    </p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="select d-flex text-uppercase">
+                    <img src="assets/images/option4.svg" class="img-fluid" alt="">
+                    <p>
+                        Cẩm nang tuyển sinh
+                    </p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="select d-flex text-uppercase">
+                    <img src="assets/images/option5.svg" class="img-fluid" alt="">
+                    <p>
+                        Hoạt động khoa học
+                    </p>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="select d-flex text-uppercase">
+                    <img src="assets/images/option6.svg" class="img-fluid" alt="">
+                    <p>
+                        công khai
+                    </p>
+                </div>
+            </a>
+        </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-lg-5">
                     <div class="logo d-flex align-items-center gap-2">
                         <figure>
                             <img src="assets/images/logocdtm.png" class="logo img-fluid" alt="">
@@ -736,7 +1016,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-3">
                     <div class="title text-uppercase mt-5">
                         <p><b>Thông tin</b></p>
                     </div>
@@ -767,11 +1047,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="col-lg-auto">
                     <div class="title text-uppercase mt-5">
                         <p><b>Fanpage</b></p>
                     </div>
-                    <figure>
+                    <figure class="last-pic">
                         <img src="assets/images/footer.png" class="img-fluid" alt="">
                     </figure>
                 </div>
