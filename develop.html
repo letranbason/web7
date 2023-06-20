@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>    
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <figure class="d-flex justify-content-center mb-0">
+                    <img src="assets/images/logocdtm.png" class="logo img-fluid" alt="">
+                </figure>
+                <div class="collapse navbar-collapse d-flex justify-content-center my-3" id="navbarSupportedContent">
+                    <div class="text d-flex flex-column navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
+                        <span class="num1">
+                            Bộ Công Thương
+                        </span>
+                        <span class="num2">
+                            trường cao đẳng thương mại
+                        </span>
+                        <span class="num3 my-1">
+                            college of commerce
+                        </span>
+                    </div>
+                    <div class="contact d-flex flex-column">
+                        <ul class="list d-flex">
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/danhba.png" class="img-fluid m-1" alt="">
+                                    Danh bạ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/contact.png" class="img-fluid m-1" alt="">
+                                    Liên hệ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/calendar.png" class="img-fluid m-1" alt="">
+                                    Lịch công tác
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/user.png" class="img-fluid m-1" alt="">
+                                    Đăng nhập
+                                </a>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex justify-content-end" role="search">
+                            <input class="form-control" type="search" placeholder="Tìm kiếm ..." aria-label="Search">
+                            <button class="btn" type="submit">
+                                <i class="fas fa-search color-custom"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="menu text-uppercase">
+        <div class="container">
+            <ul class="list d-flex align-items-center m-0 navbar flex-wrap">
+
+                <li>
+                    <a href="index.html">
+                        <img src="assets/images/homepage.svg" class="img-fluid" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="intro.html">
+                        Giới thiệu
+                    </a>
+                </li>
+                <li>
+                    <a href="develop.html">
+                        Tin tức - Sự kiện
+                    </a>
+                </li>
+                <li>
+                    <a href="organize.html">
+                        Tổ chức
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Tuyển sinh
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Đào tạo
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Nghiên cứu Khoa học
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Sinh viên
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Công khai
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="develop-site">
+        <div class="container">
+            <div class="title d-flex flex-column align-items-center">
+                <h1>
+                    Chiến lược phát triển
+                </h1>
+                <hr class="custom">
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="selection">
+                        <div class="tag">
+                            <button type="button" onclick="toggleButton(this)">Sứ mạng</button>
+                        </div>
+
+                        <div class="tag">
+                            <button type="button" onclick="toggleButton(this)">Tầm nhìn đến năm 2040</button>
+                        </div>
+
+                        <div class="tag">
+                            <button type="button" onclick="toggleButton(this)">Các giá trị cốt lõi</button>
+                        </div>
+
+                        <div class="tag">
+                            <button type="button" onclick="toggleButton(this)">Mục tiêu phát triển đến năm 2030</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="head-title">
+                        <h2>
+                            Sứ mạng
+                        </h2>
+                    </div>
+
+                    <div class="description">
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                            here', making it look like readable English. Many desktop publishing packages and web page
+                            editors now use Lorem Ipsum as their default model text,<b> and a search for 'lorem ipsum'
+                                will
+                                uncover many web sites still in their infancy. Various versions have evolved over the
+                                years,
+                                sometimes by accident, sometimes on purpose (injected humour and the like).</b>
+                        </p>
+                        <p>
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look
+                            even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
+                            sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                            generators on the Internet tend to repeat predefined chunks as necessary, making this the
+                            first true generator on the Internet.
+                        </p>
+                        <p>
+                            It uses a dictionary of over 200 Latin words, combined with a handful of model sentence
+                            structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is
+                            therefore always free from repetition, injected humour, or non-characteristic words etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="logo d-flex align-items-center gap-2">
+                        <figure>
+                            <img src="assets/images/logocdtm.png" class="logo img-fluid" alt="">
+                        </figure>
+                        <div class="collapse navbar-collapse d-flex justify-content-center my-3"
+                            id="navbarSupportedContent">
+                            <div class="text d-flex flex-column navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
+                                <span class="num1">
+                                    Bộ Công Thương
+                                </span>
+                                <span class="num2">
+                                    trường cao đẳng thương mại
+                                </span>
+                                <span class="num3 my-1">
+                                    college of commerce
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li class="var1">
+                            © Bản quyền Website: Trường Cao đẳng Thương mại
+                        </li>
+                        <li class="var2">
+                            Giấy phép đăng ký số: 517/GP-BC do Bộ Thông tin và Truyền thông cấp ngày 26/11/2007
+                        </li>
+                    </ul>
+                    <div class="social d-flex flex-wrap gap-3">
+                        <div class="facebook">
+                            <a href="#">
+                                <img src="assets/images/facebook.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="twitter">
+                            <a href="#">
+                                <img src="assets/images/facebook.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="youtube">
+                            <a href="#">
+                                <img src="assets/images/facebook.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="office">
+                            <a href="#">
+                                <img src="assets/images/facebook.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="title text-uppercase mt-5">
+                        <p><b>Thông tin</b></p>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li class="d-flex gap-3">
+                            <figure class="d-">
+                                <img src="assets/images/locate.png" alt="">
+                            </figure>
+                            45 - Dũng Sĩ Thanh Khê - Thành phố Đà Nẵng
+                        </li>
+                        <li class="d-flex gap-3">
+                            <figure class="d-">
+                                <img src="assets/images/contact.png" alt="">
+                            </figure>
+                            (84.236) 3780 525 - 3759 580 - 3811 053
+                        </li>
+                        <li class="d-flex gap-3">
+                            <figure class="d-">
+                                <img src="assets/images/fax.png" alt="">
+                            </figure>
+                            Fax: (84.236) 3811 179
+                        </li>
+                        <li class="d-flex gap-3">
+                            <figure class="d-">
+                                <img src="assets/images/mail.png" alt="">
+                            </figure>
+                            tuyensinhcoc247@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="title text-uppercase mt-5">
+                        <p><b>Fanpage</b></p>
+                    </div>
+                    <figure>
+                        <img src="assets/images/footer.png" class="img-fluid" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="below row navbar">
+            <div class="copyright col d-flex justify-content-center">
+                <p>Thiết kế và xây dựng bởi JKS</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script
+</body>
+</html>
